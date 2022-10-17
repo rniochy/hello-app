@@ -31,10 +31,18 @@ label {
 }
 .input {
      border: 1px solid #ccc;
+     height: 1.5rem;
      width: 307px;
+     border-radius: 3px;
+     padding: 0.5rem;
 }
 #hello-buttons {
-    /* margin-left: 20%; */
+     margin-bottom: 0.5rem;
+}
+.hello-button {
+    height: 1rem;
+    padding: 0.5rem;
+    border-radius: 3px;
 }
 footer {
     border: 1px solid #000;
