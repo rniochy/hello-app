@@ -5,6 +5,11 @@
      padding: 0;
      margin: 0;
 }
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 #hello-container {
     display: flex;
     flex-direction: column;
@@ -16,16 +21,22 @@
      display: flex;
      flex-direction: column;
 }
-.input {
-     width: 90%;
+#hello-inputs #password{
+    margin: 3px 0 5px 0;
 }
 label {
      display: none;
 }
+.input {
+     border: 1px solid #ccc;
+}
 #hello-buttons {
      display: flex;
+     flex-direction: row;
 }
 
 @media screen and (min-width:320px) and  (max-width:480px) {
-    body {background-color: red;}
+    .input {
+        width: 80%;
+   }
 }
