@@ -1,3 +1,14 @@
 body {
      background-color: red;
 }
+#hello-inputs {
+     display: flex;
+     flex-direction: column;
+}
+label {
+     display: none;
+}
+#hello-buttons {
+     display: flex;
+     justify-content: space-between;
+}
