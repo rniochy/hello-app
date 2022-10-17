@@ -5,10 +5,9 @@
      padding: 0;
      margin: 0;
 }
-main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+header {
+     margin-bottom: 5px;
+     border: 1px solid #000;
 }
 #hello-container {
     display: flex;
@@ -20,6 +19,7 @@ main {
 #hello-inputs {
      display: flex;
      flex-direction: column;
+     align-items: center;
 }
 #hello-inputs #password{
     margin: 3px 0 5px 0;
@@ -29,14 +29,37 @@ label {
 }
 .input {
      border: 1px solid #ccc;
+     width: 307px;
 }
 #hello-buttons {
-     display: flex;
-     flex-direction: row;
+    margin-left: 20%;
+}
+footer {
+    border: 1px solid #000;
+    height: 30px;
 }
 
-@media screen and (min-width:320px) and  (max-width:480px) {
+@media screen and  (max-width:480px) {
     .input {
         width: 80%;
    }
+   #hello-buttons {
+    margin-left: 10%;
+}
+}
+@media screen and (min-width: 481px) and  (max-width:768px) {
+    .input {
+        width: 80%;
+   }
+   #hello-buttons {
+    margin-left: 10%;
+}
+}
+@media screen and (min-width: 789px) and  (max-width:1279px) {
+    .input {
+        width: 307px;
+   }
+   #hello-buttons {
+    margin-left: inherit;
+}
 }
