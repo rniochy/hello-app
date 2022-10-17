@@ -7,9 +7,11 @@
      user-select: none;
      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
-#message {
+#message-container {
      position: absolute;
      right: 2rem;
+     top: -2rem;
+     transition: all 500ms ease-in-out;
 }
 header {
      height: 3rem;
@@ -42,6 +44,7 @@ label {
      width: 307px;
      border-radius: 3px;
      padding: 0.5rem;
+     transition: all 500ms ease-in-out;
 }
 #hello-buttons {
      margin-bottom: 0.5rem;
@@ -55,7 +58,6 @@ footer {
     border: 1px solid #000;
     height: 3rem;
 }
-
 @media screen and (max-width:480px) {
     #hello-container {
         width: 100%;
@@ -71,7 +73,4 @@ footer {
     .input {
         width:307px;
    }
-}
-@media screen and (min-width: 769px) and  (max-width:1279px) {
-
 }
