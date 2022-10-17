@@ -9,6 +9,9 @@ header {
      margin-bottom: 5px;
      border: 1px solid #000;
 }
+main {
+     margin: 0 auto;
+}
 #hello-container {
     display: flex;
     flex-direction: column;
@@ -19,7 +22,6 @@ header {
 #hello-inputs {
      display: flex;
      flex-direction: column;
-     align-items: center;
 }
 #hello-inputs #password{
     margin: 3px 0 5px 0;
@@ -32,7 +34,7 @@ label {
      width: 307px;
 }
 #hello-buttons {
-    margin-left: 20%;
+    /* margin-left: 20%; */
 }
 footer {
     border: 1px solid #000;
@@ -40,26 +42,23 @@ footer {
 }
 
 @media screen and  (max-width:480px) {
+    #hello-container {
+        width: 100%;
+    }
+    main {
+         width: 60%;
+    }
     .input {
-        width: 80%;
+        width: 100%;
    }
-   #hello-buttons {
-    margin-left: 10%;
-}
 }
 @media screen and (min-width: 481px) and  (max-width:768px) {
     .input {
-        width: 80%;
+        width:307px;
    }
-   #hello-buttons {
-    margin-left: 10%;
 }
-}
-@media screen and (min-width: 789px) and  (max-width:1279px) {
+@media screen and (min-width: 769px) and  (max-width:1279px) {
     .input {
         width: 307px;
    }
-   #hello-buttons {
-    margin-left: inherit;
-}
 }
