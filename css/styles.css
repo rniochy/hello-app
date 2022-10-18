@@ -1,3 +1,6 @@
+:root{
+      --border: 1px solid #000;
+}
 * {
      text-decoration: none;
      border: none;
@@ -16,7 +19,7 @@
 header {
      height: 3rem;
      margin-bottom: 5px;
-     border: 1px solid #000000;
+     border-bottom: var(--border);;
 }
 #hello-container {
     position: relative;
@@ -55,10 +58,18 @@ label {
     border-radius: 3px;
 }
 footer {
-    border: 1px solid #000;
+    border-top: var(--border);
     height: 3rem;
 }
 @media screen and (max-width:480px) {
+     header {
+           text-align: center;
+     }
+     header h1 {
+           font-size: 14pt;
+           margin: 1rem;
+           color: rgb(224, 20, 20);
+     }
     #hello-container {
         width: 100%;
     }
