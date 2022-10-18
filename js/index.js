@@ -26,6 +26,11 @@ logout.addEventListener('click', ()=> {
     setBorderColor(username, colorGrey);
     setBorderColor(password, colorGrey);
     messageAlert(-2);
+
+    if(username && password){
+         message.style.color = "#000000";
+         messageAlert(`Have a great day ${username.value}!`, 0);
+    }
 });
 
   function messageAlert(msg, position){
