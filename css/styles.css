@@ -1,5 +1,7 @@
 :root{
       --border: 1px solid #666666;
+      --white-color: #ffffff;
+      --self-center: 0 auto;
 }
 * {
      text-decoration: none;
@@ -31,10 +33,10 @@ header h1 {
     display: flex;
     flex-direction: column;
     width: 80%;
-    margin: 0 auto;
+    margin: var(--self-center);
 }
 main {
-    margin: 0 auto;
+    margin: var(--self-center);;
 }
 #hello-inputs {
      display: flex;
@@ -45,6 +47,15 @@ main {
 }
 label {
      display: none;
+}
+#login {
+      background-color: rgb(21, 124, 241);
+      color: var(--white-color);
+}
+#login:hover { background-color: rgb(38, 119, 210);}
+#logout {
+     background-color:  #f5580a;
+     color: var(--white-color);;
 }
 .input {
      border: 1px solid #ccc;
@@ -68,17 +79,12 @@ footer {
     height: 3rem;
 }
 @media screen and (max-width:480px) {
-     header {
-           text-align: center;
-     }
      header h1 {
            font-size: 14pt;
-           margin: 1rem;
-           color: rgb(224, 20, 20);
      }
      #message {
            font-size: 12pt;
-           color: rgb(245, 88, 10);
+           color: #f5580a;
      }
     #hello-container {
         width: 100%;

@@ -7,6 +7,7 @@ const messageContainer = document.getElementById("message-container");
 const colorGrey = "ccc", colorRed = "ff0000";
 
 login.addEventListener('click', ()=>{
+    setColorMessage("f5580a");
     if(!username.value && !password.value){
         setBorderColor(username, colorRed);
         setBorderColor(password, colorRed);
@@ -27,9 +28,9 @@ logout.addEventListener('click', ()=> {
     setBorderColor(password, colorGrey);
     messageAlert(-2);
 
-    if(username && password){
-         message.style.color = "#000000";
-         messageAlert(`Have a great day ${username.value}!`, 0);
+    if(username.value && password.value){
+        setColorMessage("000000");
+         messageAlert(`Have a great day <${username.value}!>`, 0);
     }
 });
 
@@ -40,4 +41,7 @@ logout.addEventListener('click', ()=> {
 
   function setBorderColor(node, color){
         node.style = `border-color: #${color}`;
+  }
+  function setColorMessage( color){
+    message.style.color = `#${color}`;
   }
