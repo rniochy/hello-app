@@ -21,7 +21,8 @@
 header {
      height: 3rem;
      margin-bottom: 5px;
-     border-bottom: var(--border);;
+     border-bottom: var(--border);
+
 }
 header h1 {
      font-size: 18pt;
@@ -84,7 +85,7 @@ footer {
            font-size: 14pt;
      }
      #message {
-           font-size: 12pt;
+           font-size: 11pt;
            color: #f5580a;
      }
     #hello-container {

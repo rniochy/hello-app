@@ -33,7 +33,7 @@ login.addEventListener('click', ()=>{
     }
     
     setColorMessage("4cfa7d");
-    messageAlert(`<${proglang.value}> <${username.value}> you have successfully logged in!`,0);
+    messageAlert(`<${proglang.value}> <${username.value}> \n you have successfully logged in!`,0);
 });
 
 logout.addEventListener('click', ()=> {
