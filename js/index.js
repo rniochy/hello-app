@@ -3,6 +3,7 @@ const logout = document.getElementById("logout");
 const message = document.getElementById("message");
 const username = document.getElementById("username");
 const password = document.getElementById("password");
+const proglang = document.getElementById("proglang");
 const messageContainer = document.getElementById("message-container");
 const colorGrey = "ccc", colorRed = "ff0000";
 
@@ -25,6 +26,13 @@ login.addEventListener('click', ()=>{
         setBorderColor(password, colorRed);
         return;
     }
+    if(!proglang.value){
+        messageAlert("Fill the Language Code field",0);
+        setBorderColor(proglang, colorRed);
+        return;
+    }
+
+    messageAlert(`<${proglang}> <${username}> you have successfully logged in!`,0);
 });
 
 logout.addEventListener('click', ()=> {

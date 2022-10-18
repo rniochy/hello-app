@@ -42,8 +42,8 @@ main {
      display: flex;
      flex-direction: column;
 }
-#hello-inputs #password{
-    margin: 3px 0 5px 0;
+#hello-inputs .input{
+    margin: 1px 0 3px 0;
 }
 label {
      display: none;
