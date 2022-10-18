@@ -12,14 +12,18 @@ login.addEventListener('click', ()=>{
         setBorderColor(username, colorRed);
         setBorderColor(password, colorRed);
         messageAlert("Fill the all field",0);
+        return;
     }
 
     if(!username.value){
         setBorderColor(username, colorRed);
-      
-        }
+        messageAlert("Fill the User name field",0);
+        return;
+    }
     if(!password.value){
+        messageAlert("Fill the Password field",0);
         setBorderColor(password, colorRed);
+        return;
     }
 });
 
