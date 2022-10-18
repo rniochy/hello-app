@@ -57,6 +57,7 @@ label {
      background-color:  #f5580a;
      color: var(--white-color);;
 }
+#logout:hover { background-color: #f66116 ;}
 .input {
      border: 1px solid #ccc;
      height: 1.5rem;
