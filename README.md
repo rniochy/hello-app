@@ -15,7 +15,7 @@ make the app easier and more pleasing to use.
 The objective of the Hello app is to leverage geolocation to obtain the users
 country so it can then generate a customized greeting in the users native
 language.
-
+<!-- 
 ### Constraints
 
 -   Developers should use the [IP-API](http://ip-api.com/docs/api:json) service
@@ -23,7 +23,7 @@ language.
 -   Developers should use the
     [Fourtonfish](https://www.fourtonfish.com/hellosalut/hello/) service to
     obtain the greeting in the users native language by passing the users IP.
--   Developers must use a HTML entities decoding to decode the hello message.
+-   Developers must use a HTML entities decoding to decode the hello message. -->
 
 ## User Stories
 
@@ -52,7 +52,7 @@ language.
         includes at least the local IP address, city, region, country name, zip code,
         longitude, latitude, and timezone.
 
-## Useful links and resources
+<!-- ## Useful links and resources
 
 -   [Form Follows Function (Wikipedia)](https://en.wikipedia.org/wiki/Form_follows_function)
 -   [Personalization (Wikipedia)](https://en.wikipedia.org/wiki/Personalization)
@@ -61,4 +61,4 @@ language.
 
 ## Example projects
 
-[Fourtonfish Hello World](https://fourtonfish.com/hellosalut/helloworld/)
+[Fourtonfish Hello World](https://fourtonfish.com/hellosalut/helloworld/) -->
