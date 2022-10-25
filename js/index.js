@@ -58,3 +58,13 @@ logout.addEventListener('click', ()=> {
   function setColorMessage( color){
     message.style.color = `#${color}`;
   }
+
+  (()=>{
+    fetch( 'https://stefanbohacek.com/hellosalut/?mode=auto')
+    .then( function( response ){
+      return response.json()
+    } )
+    .then( function( jsonData ){
+      console.log( jsonData ) 
+    } );
+  })()
