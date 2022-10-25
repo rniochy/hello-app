@@ -26,12 +26,11 @@ login.addEventListener('click', ()=>{
         setBorderColor(password, colorRed);
         return;
     }
-    if(!proglang.value){
-        messageAlert("Fill the Language Code field",0);
-        setBorderColor(proglang, colorRed);
+    if(!countryCode.value){
+        messageAlert("Fill the Country Code field",0);
+        setBorderColor(countryCode, colorRed);
         return;
     }
-    
     setColorMessage("4cfa7d");
     // const {hello} = getHello();
     messageAlert(`<${"hello"}> <${username.value}> \n you have successfully logged in!`,0);
