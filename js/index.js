@@ -3,7 +3,7 @@ const logout = document.getElementById("logout");
 const message = document.getElementById("message");
 const username = document.getElementById("username");
 const password = document.getElementById("password");
-const countryCode = document.getElementById("country-code");
+const langCode = document.getElementById("lang-code");
 const messageContainer = document.getElementById("message-container");
 const colorGrey = "ccc", colorRed = "ff0000";
 
@@ -26,9 +26,9 @@ login.addEventListener('click', ()=>{
         setBorderColor(password, colorRed);
         return;
     }
-    if(!countryCode.value){
-        messageAlert("Fill the Country Code field",0);
-        setBorderColor(countryCode, colorRed);
+    if(!langCode.value){
+        messageAlert("Fill the Language field",0);
+        setBorderColor(langCode, colorRed);
         return;
     }
     setColorMessage("4cfa7d");
