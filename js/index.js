@@ -33,7 +33,8 @@ login.addEventListener('click', ()=>{
     }
     
     setColorMessage("4cfa7d");
-    messageAlert(`<${proglang.value}> <${username.value}> \n you have successfully logged in!`,0);
+    const {hello} = getHello();
+    messageAlert(`<${hello}> <${username.value}> \n you have successfully logged in!`,0);
 });
 
 logout.addEventListener('click', ()=> {
@@ -58,13 +59,3 @@ logout.addEventListener('click', ()=> {
   function setColorMessage( color){
     message.style.color = `#${color}`;
   }
-
-  (()=>{
-    fetch( 'https://stefanbohacek.com/hellosalut/?mode=auto')
-    .then( function( response ){
-      return response.json()
-    } )
-    .then( function( jsonData ){
-      console.log( jsonData ) 
-    } );
-  })()
