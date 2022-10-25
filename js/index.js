@@ -3,7 +3,7 @@ const logout = document.getElementById("logout");
 const message = document.getElementById("message");
 const username = document.getElementById("username");
 const password = document.getElementById("password");
-const proglang = document.getElementById("proglang");
+const countryCode = document.getElementById("country-code");
 const messageContainer = document.getElementById("message-container");
 const colorGrey = "ccc", colorRed = "ff0000";
 
@@ -33,8 +33,8 @@ login.addEventListener('click', ()=>{
     }
     
     setColorMessage("4cfa7d");
-    const {hello} = getHello();
-    messageAlert(`<${hello}> <${username.value}> \n you have successfully logged in!`,0);
+    // const {hello} = getHello();
+    messageAlert(`<${"hello"}> <${username.value}> \n you have successfully logged in!`,0);
 });
 
 logout.addEventListener('click', ()=> {
