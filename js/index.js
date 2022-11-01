@@ -32,8 +32,8 @@ login.addEventListener('click', ()=>{
         return;
     }
     setColorMessage("4cfa7d");
-    // const {hello} = getHello();
-    messageAlert(`<${"hello"}> <${username.value}> \n you have successfully logged in!`,0);
+    // const hello = getHello(langCode.value);
+    messageAlert(`<${username.value}> \n you have successfully logged in!`,0);
 });
 
 logout.addEventListener('click', ()=> {
@@ -44,6 +44,9 @@ logout.addEventListener('click', ()=> {
     if(username.value && password.value){
         setColorMessage("000000");
          messageAlert(`Have a great day <${username.value}!>`, 0);
+         username.value = '';
+         password.value = '';
+         langCode.value = '';
     }
 });
 
